@@ -3,8 +3,55 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgb(226, 232, 240);
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: var(--tw-empty, /*!*/ /*!*/);
+    --tw-pan-y: var(--tw-empty, /*!*/ /*!*/);
+    --tw-pinch-zoom: var(--tw-empty, /*!*/ /*!*/);
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ordinal: var(--tw-empty, /*!*/ /*!*/);
+    --tw-slashed-zero: var(--tw-empty, /*!*/ /*!*/);
+    --tw-numeric-figure: var(--tw-empty, /*!*/ /*!*/);
+    --tw-numeric-spacing: var(--tw-empty, /*!*/ /*!*/);
+    --tw-numeric-fraction: var(--tw-empty, /*!*/ /*!*/);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(66 153 225 / 0.5);
+    --tw-blur: var(--tw-empty, /*!*/ /*!*/);
+    --tw-brightness: var(--tw-empty, /*!*/ /*!*/);
+    --tw-contrast: var(--tw-empty, /*!*/ /*!*/);
+    --tw-grayscale: var(--tw-empty, /*!*/ /*!*/);
+    --tw-hue-rotate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-invert: var(--tw-empty, /*!*/ /*!*/);
+    --tw-saturate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-sepia: var(--tw-empty, /*!*/ /*!*/);
+    --tw-drop-shadow: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-blur: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-brightness: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-contrast: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-grayscale: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-hue-rotate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-invert: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-opacity: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-saturate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-sepia: var(--tw-empty, /*!*/ /*!*/);
 }
 
 body {
@@ -22,7 +69,7 @@ nav {
     color: rgb(100,21,255);
 }
 
-.btn {
+.btn, .input__btn {
     border-radius: 9999px;
     background-color: rgb(100,21,255);
     color: rgb(247,250,252);
@@ -66,7 +113,6 @@ a:hover {
     list-style: none;
     font-size: 18px;
     line-height: 24px;
-    color: rgb(36,62,99);
     font-weight: 600;
     margin-top: .5rem;
     margin-bottom: .5rem;
@@ -92,6 +138,7 @@ a:hover {
 img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .logo__container {
@@ -133,7 +180,7 @@ img {
 
 h1 {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 48px;
     line-height: 1.25;
     color: rgb(26,32,44);
     margin: 0;
@@ -149,7 +196,7 @@ h1 {
 
 .header__para {
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 32px;
     margin-bottom: 32px;
 }
@@ -173,4 +220,49 @@ h1 {
     display: flex;
     flex-direction: row;
     padding: 96px 0;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.input__container {
+    position: relative;
+    max-width: 448px;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    border-radius: 9999px;
+    border-width: 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 192px;
+    padding-left: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 300ms;
+}
+
+.input__btn {
+    position: absolute;
+    margin: 8px 0;
+    width: 160px;
+    line-height: 1;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --tw-bg-opacity: 1;
+    background-color: rgb(100 21 255 / var(--tw-bg-opacity));
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(247 250 252 / var(--tw-text-opacity));
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 300ms;
 }
