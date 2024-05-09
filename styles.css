@@ -911,6 +911,134 @@ p {
 }
 
 .slider__container {
-    width: 100%;
+    width: 579px;
     margin-top: 40px;
+}
+
+.slider__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-star {
+    margin-bottom: 16px;
+    color: #faba2a
+}
+
+.slider__card--title {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.slider__card--comment {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.625;
+    --tw-text-opacity: 1;
+    color: rgb(74 85 104 / var(--tw-text-opacity));
+}
+
+.card__client-info-control--container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.client__info {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client__img--wrapper {
+    margin-right: 0px;
+}
+
+.client__img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: block;
+}
+
+.client__info--wrapper {
+    text-align: left;
+    margin-left: 16px;
+    margin-top: 0px;
+}
+
+.client__name {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px;
+    --tw-text-opacity: 1;
+    color: rgb(36 62 99 / var(--tw-text-opacity));
+}
+
+.client__position {
+    font-weight: 500;
+    --tw-text-opacity: 1;
+    color: rgb(124 139 161 / var(--tw-text-opacity));
+    margin: 0px;
+}
+
+.control__pointer--container {
+    display: flex;
+    margin-top: 32px;
+}
+
+.divider {
+    margin: 12px 0;
+    border-right-width: 1px;
+}
+
+.left__pointer, .right__pointer {
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 50%;
+    --tw-bg-opacity: 1;
+    background-color: rgb(237 242 247 / var(--tw-bg-opacity));
+    padding: 16px;
+    --tw-text-opacity: 1;
+    color: rgb(100 21 255 / var(--tw-text-opacity));
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 300ms;
+}
+
+.left__pointer:hover, .right__pointer:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(80 17 204 / var(--tw-text-opacity));
+    cursor: pointer;
+}
+
+.left__pointer:focus, .right__pointer:focus {
+    --tw-shadow: 0 0 0 3px rgba(66,153,225,0.5);
+    --tw-shadow-colored: 0 0 0 3px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+}
+
+@media  (min-width: 640px) {
+
+    .client__info {
+        flex-direction: row;
+    }
+
+    .client__img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .control__pointer--container {
+        margin-top: 0px;
+    }
 }
