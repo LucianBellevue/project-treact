@@ -97,7 +97,7 @@ nav {
     transition-duration: 300ms;
 }
 
-.btn, .input__btn, .quality__btn, .values__btn, .plan__btn {
+.btn, .input__btn, .quality__btn, .values__btn, .plan__btn, .get-started__btn, .contact__btn {
     border-radius: 9999px;
     background-color: rgb(100,21,255);
     color: rgb(247,250,252);
@@ -109,7 +109,7 @@ nav {
     letter-spacing: .025em;
     cursor: pointer;
     transition-property: border-color, color;
-    transition-duration: all 300ms ease;
+    transition-duration: 300ms;
 }
 
 button, input, textarea {
@@ -1027,7 +1027,102 @@ p {
     outline-offset: 2px;
 }
 
-@media  (min-width: 640px) {
+/* main - banner section */
+
+#banner {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.banner__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.banner__container--wrapper {
+    position: relative;
+    border-radius: 8px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(100 21 255 / var(--tw-bg-opacity));
+    padding: 80px 0;
+}
+
+.banner__description {
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    display: flex;
+    max-width: 1024px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.banner-txt__container {
+    max-width: 512px;
+}
+
+.banner-txt {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.banner-btn__container {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 512px;
+}
+
+.get-started__btn:first-child {
+    margin-top: 0px;
+}
+
+.get-started__btn {
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 101 101 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(247 250 252 / var(--tw-text-opacity));
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.get-started__btn:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 62 62 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(237 242 247 / var(--tw-text-opacity));
+}
+
+.contact__btn {
+    --tw-border-opacity: 1;
+    border-color: rgb(160 174 192 / var(--tw-border-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(247 250 252 / var(--tw-text-opacity));
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border-width: 1px;
+}
+
+.contact__btn:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(100 21 255 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(247 250 252 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(100 21 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
 
     .client__info {
         flex-direction: row;
@@ -1041,4 +1136,57 @@ p {
     .control__pointer--container {
         margin-top: 0px;
     }
+
+    .banner-txt {
+        font-size: 30px;
+    }
+
+    .banner-btn___container {
+        flex-direction: row;
+    }
+
+    .get-started__btn {
+        margin-top: 0px;
+        margin-right: 32px;
+        width: auto;
+        padding: 16px 32px;
+        font-size: 16px;
+    }
+
+    .contact__btn:last-child {
+        margin-right: 0px;
+    }
+
+    .contact__btn {
+        margin-top: 0px;
+        margin-right: 32px;
+        width: auto;
+        padding: 16px 32px;
+        font-size: 16px;
+    }
+
+@media (min-width:1024px) {
+    .banner__container--wrapper {
+        padding: 96px 0;
+    }
+
+    .banner__description {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .banner-btn__container {
+        margin-top: opx;
+        justify-content: flex-end;
+        width: 50%;
+    }
+
+    .get-started__btn {
+        padding: 20px  40px;
+    }
+
+    .contact__btn {
+        padding: 20px  40px;
+    }
+}
 }
