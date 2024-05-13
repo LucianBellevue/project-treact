@@ -38,8 +38,9 @@
                         </a>
                         <a href="#" class="logo__name">Treact</a>
                     </div>
-                    <div class="mobile__links--container" style="display: block; transform: translateX(150%) translateZ(0px);">
-                        <button class="mobile__links--btn" onclick="closeMenu()"><i class="fas fa-times"></i></button>
+                    <button class="mobile__links--btn" onclick="openMenu()"><i class="fas fa-bars"></i></button>
+                    <div class="mobile__links--container">
+                        <button class="mobile__links--btn close" onclick="closeMenu()"><i class="fas fa-times"></i></button>
                         <ul class="mobile__links--list">
                             <li class="mobile__links--item"><a href="#" class="mobile__links--link">About</a></li>
                             <li class="mobile__links--item"><a href="#" class="mobile__links--link">Blog</a></li>
@@ -49,7 +50,6 @@
                             <li class="mobile__links--item"><button class="btn">Sign Up</button></li>
                         </ul>
                     </div>
-                    <button class="mobile__links--btn" onclick="openMenu()"><i class="fas fa-bars"></i></button>
                 </div>
             </nav>
             <header>
