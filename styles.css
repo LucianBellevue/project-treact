@@ -72,7 +72,6 @@ a {
 
 
 nav {
-    display: none;
     width: 100%;
     height: 100px;
     padding-top: 8px;
@@ -1388,7 +1387,60 @@ p {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgb(26 32 44 / var(--tw-text-opacity));
- }  
+ }
+
+ .mobile__links--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .mobile__links-link {
+    margin: 8px 0;
+    padding-bottom: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 300ms;
+ }
+
+.mobile__links--btn {
+    z-index: 20;
+    background-color: transparent;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 300ms;
+}
+
+.menu__links--btn:hover {
+    --tw-bg-opacity: 0;
+}
+
+.fas.fa-bars {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    background-image: none;
+    vertical-align: middle;
+    align-self: center;
+    color: inherit;
+}
+
+.fas.fa-times {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    background-image: none;
+    vertical-align: middle;
+    align-self: center;
+    color: inherit;
+}
 
 /* media queries */
 
